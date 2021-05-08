@@ -1,3 +1,7 @@
 tap "homebrew/bundle"
 tap "homebrew/core"
+tap "romkatv/powerlevel10k"
+brew "tmux"
+brew "vim"
 brew "zsh"
+brew "romkatv/powerlevel10k/powerlevel10k"
