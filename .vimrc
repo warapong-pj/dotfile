@@ -17,5 +17,8 @@ filetype plugin indent on    " required
 nnoremap <C-n> :NERDTree<CR>
 nnoremap <C-n> :NERDTreeToggle<CR>
 
-let g:airline_powerline_fonts=1
 let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#left_sep = ' '
+let g:airline#extensions#tabline#left_alt_sep = '|'
+let g:airline#extensions#tabline#formatter = 'default'
+let g:airline_powerline_fonts = 1
