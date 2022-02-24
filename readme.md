@@ -1,3 +1,20 @@
+### config multiple git account
+1. generate ssh key by command `ssh-keygen -t ed25519 -C "user@domain"`
+2. add ssh config
+```
+Host github.com-office
+  HostName github.com
+  User git
+  IdentityFile /path/to/public_key
+
+Host github.com-person
+  HostName github.com
+  User git
+  IdentityFile /path/to/public_key
+```
+3. add private key by `ssh-add /path/to/private_key`
+4. setup repository `git remote set-url origin git@github.com-person:username/repo.git`
+
 ### install zsh, oh my shell
 1. sudo apt install zsh curl wget git -y 
 2. chsh -s $(which zsh)
@@ -18,3 +35,4 @@
 ```
 code --list-extensions | xargs -L 1 echo code --install-extension
 ```
+
