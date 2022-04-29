@@ -15,14 +15,6 @@ Host github.com-person
 3. add private key by `ssh-add /path/to/private_key`
 4. setup repository `git remote set-url origin git@github.com-person:username/repo.git`
 
-### install zsh, oh my shell
-1. sudo apt install zsh curl wget git -y 
-2. chsh -s $(which zsh)
-3. sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-4. git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugins/zsh-autosuggestions
-5. git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/plugins/zsh-syntax-highlighting
-6. sed -i "s/plugins=(git)/plugins=(git zsh-autosuggestions zsh-syntax-highlighting)/g" ~/.zshrc
-
 ### install fish-shell and oh-my-fish
 1. sudo apt-get install fish -y
 2. curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish
