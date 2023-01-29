@@ -20,7 +20,9 @@ Host github.com-person
 2. download and extract fish-shell ` curl -L -O https://github.com/fish-shell/fish-shell/releases/download/3.6.0/fish-3.6.0.tar.xz && tar -xf fish-3.6.0.tar.xz`
 3. install fish shell `cmake .; make; sudo make install;`
 4. curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish
-5. omf theme agnoster
+5. echo /usr/local/bin/fish | sudo tee -a /etc/shells
+6. chsh -s /usr/local/bin/fish
+7. omf theme agnoster
 
 ### install vundle plugins
 1. git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
