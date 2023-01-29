@@ -19,13 +19,13 @@ Host github.com-person
 1. install dependencies `sudo apt update && sudo apt install -y build-essential cmake ncurses-dev libncurses5-dev libpcre2-dev gettext`
 2. download and extract fish-shell ` curl -L -O https://github.com/fish-shell/fish-shell/releases/download/3.6.0/fish-3.6.0.tar.xz && tar -xf fish-3.6.0.tar.xz`
 3. install fish shell `cmake .; make; sudo make install;`
-4. curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish
-5. echo /usr/local/bin/fish | sudo tee -a /etc/shells
-6. chsh -s /usr/local/bin/fish
+4. install oh-my-fish `curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish`
+5. allow fish shell to login shell `echo /usr/local/bin/fish | sudo tee -a /etc/shells`
+6. change default to fish shell `chsh -s /usr/local/bin/fish`
 7. omf theme agnoster
 
 ### install vundle plugins
-1. git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+1. install vundle `git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim`
 
 ### how to export vscode extensions
 ```
