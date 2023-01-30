@@ -22,7 +22,6 @@ Host github.com-person
 4. install oh-my-fish `curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish`
 5. allow fish shell to login shell `echo /usr/local/bin/fish | sudo tee -a /etc/shells`
 6. change default to fish shell `chsh -s /usr/local/bin/fish`
-7. omf theme agnoster
 
 ### install vundle plugins
 1. install vundle `git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim`
@@ -31,4 +30,3 @@ Host github.com-person
 ```
 code --list-extensions | xargs -L 1 echo code --install-extension
 ```
-
