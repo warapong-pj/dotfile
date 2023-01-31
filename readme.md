@@ -16,15 +16,37 @@ Host github.com-person
 4. setup repository `git remote set-url origin git@github.com-person:username/repo.git`
 
 ### install fish-shell and oh-my-fish
-1. sudo apt-get install fish -y
-2. curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish
-3. omf theme agnoster
+1. install dependencies `sudo apt update && sudo apt install -y build-essential cmake ncurses-dev libncurses5-dev libpcre2-dev gettext`
+2. download and extract fish-shell ` curl -L -O https://github.com/fish-shell/fish-shell/releases/download/3.6.0/fish-3.6.0.tar.xz && tar -xf fish-3.6.0.tar.xz`
+3. install fish shell `cmake .; make; sudo make install;`
+4. install oh-my-fish `curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish`
+5. allow fish shell to login shell `echo /usr/local/bin/fish | sudo tee -a /etc/shells`
+6. change default to fish shell `chsh -s /usr/local/bin/fish`
 
 ### install vundle plugins
-1. git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+1. install vundle `git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim`
+
+### install kubectl
+1. curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
+2. chmod +x kubectl
+3. sudo mv kubectl /usr/local/bin/
+
+### install k9s
+1. curl -L -O https://github.com/derailed/k9s/releases/download/v0.27.0/k9s_Linux_amd64.tar.gz
+2. tar -xzf k9s_Linux_amd64.tar.gz
+3. sudo mv k9s /usr/local/bin/
+
+### install kubectx
+1. sudo git clone https://github.com/ahmetb/kubectx /opt/kubectx
+2. sudo ln -s /opt/kubectx/kubectx /usr/local/bin/kubectx
+3. sudo ln -s /opt/kubectx/kubens /usr/local/bin/kubens
+
+### install kind
+1. curl -Lo ./kind https://kind.sigs.k8s.io/dl/v0.17.0/kind-linux-amd64
+2. chmod +x ./kind
+3. sudo mv ./kind /usr/local/bin/kind
 
 ### how to export vscode extensions
 ```
 code --list-extensions | xargs -L 1 echo code --install-extension
 ```
-
