@@ -27,24 +27,24 @@ Host github.com-person
 1. install vundle `git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim`
 
 ### install kubectl
-1. curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
-2. chmod +x kubectl
-3. sudo mv kubectl /usr/local/bin/
+1. download binary `curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"`
+2. append execute to binary file `chmod +x kubectl`
+3. move file to PATH directory `sudo mv kubectl /usr/local/bin/`
 
 ### install k9s
-1. curl -L -O https://github.com/derailed/k9s/releases/download/v0.27.0/k9s_Linux_amd64.tar.gz
-2. tar -xzf k9s_Linux_amd64.tar.gz
-3. sudo mv k9s /usr/local/bin/
+1. download archive file `curl -L -O https://github.com/derailed/k9s/releases/download/v0.27.0/k9s_Linux_amd64.tar.gz`
+2. extract archive file `tar -xzf k9s_Linux_amd64.tar.gz`
+3. move file to PATH directory `sudo mv k9s /usr/local/bin/`
 
 ### install kubectx
-1. sudo git clone https://github.com/ahmetb/kubectx /opt/kubectx
-2. sudo ln -s /opt/kubectx/kubectx /usr/local/bin/kubectx
-3. sudo ln -s /opt/kubectx/kubens /usr/local/bin/kubens
+1. clone kubectx repository `sudo git clone https://github.com/ahmetb/kubectx /opt/kubectx`
+2. move kubectx to PATH directory `sudo ln -s /opt/kubectx/kubectx /usr/local/bin/kubectx`
+3. move kubens to PATH directory `sudo ln -s /opt/kubectx/kubens /usr/local/bin/kubens`
 
 ### install kind
-1. curl -Lo ./kind https://kind.sigs.k8s.io/dl/v0.17.0/kind-linux-amd64
-2. chmod +x ./kind
-3. sudo mv ./kind /usr/local/bin/kind
+1. download binary `curl -Lo ./kind https://kind.sigs.k8s.io/dl/v0.17.0/kind-linux-amd64`
+2. append execute to binary file `chmod +x ./kind`
+3. move file to PATH directory `sudo mv ./kind /usr/local/bin/kind`
 
 ### how to export vscode extensions
 ```
