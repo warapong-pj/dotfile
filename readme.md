@@ -59,6 +59,11 @@ Host github.com-person
 2. move kubectx to PATH directory `sudo ln -s /opt/kubectx/kubectx /usr/local/bin/kubectx`
 3. move kubens to PATH directory `sudo ln -s /opt/kubectx/kubens /usr/local/bin/kubens`
 
+### install k6
+1. download binary file `https://github.com/grafana/k6/releases/download/v0.43.1/k6-v0.43.1-linux-amd64.tar.gz`
+2. extract file `tar -xzf k6-v0.43.1-linux-amd64.tar.gz`
+3. mv binary to PATH `sudo mv ./k6-v0.43.1-linux-amd64/k6 /usr/local/bin`
+
 ### how to export vscode extensions
 ```
 code --list-extensions | xargs -L 1 echo code --install-extension
