@@ -34,7 +34,7 @@ Host github.com-person
 
 ### install python pip
 1. download get-pip.py `curl -L -O https://bootstrap.pypa.io/get-pip.py`
-2. execute script to install pip `python3 get-pip`
+2. execute script to install pip `python3 get-pip.py`
 
 ### install kubectl
 1. download binary `curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"`
