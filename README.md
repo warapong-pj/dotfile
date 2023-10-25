@@ -15,29 +15,26 @@ Host github.com-person
 3. add private key by `ssh-add /path/to/private_key`
 4. setup repository `git remote set-url origin git@github.com-person:username/repo.git`
 
-### install vundle plugins
-1. install vundle `git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim`
-
 ### install powerline front
 1. clone front and install script `git clone https://github.com/powerline/fonts.git --depth=1`
-2. change directory and execute install script `cd front && ./install.sh`
-
-### install python pip
-1. download get-pip.py `curl -L -O https://bootstrap.pypa.io/get-pip.py`
-2. execute script to install pip `python get-pip`
+2. change directory and execute install script `cd fonts && ./install.sh`
 
 ### install fish-shell and oh-my-fish
 1. install dependencies `sudo apt update && sudo apt install -y build-essential cmake ncurses-dev libncurses5-dev libpcre2-dev gettext`
 2. download and extract fish-shell `curl -L -O https://github.com/fish-shell/fish-shell/releases/download/3.6.0/fish-3.6.0.tar.xz && tar -xf fish-3.6.0.tar.xz`
-3. install fish shell `cmake .; make; sudo make install;`
-4. install oh-my-fish `curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish`
-5. allow fish shell to login shell `echo /usr/local/bin/fish | sudo tee -a /etc/shells`
-6. change default to fish shell `chsh -s /usr/local/bin/fish`
+3. change directory `cd fish-3.6.0`
+4. install fish shell `cmake .; make; sudo make install;`
+5. install oh-my-fish `curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish`
+6. allow fish shell to login shell `echo /usr/local/bin/fish | sudo tee -a /etc/shells`
+7. change default to fish shell `chsh -s /usr/local/bin/fish`
+8. install agnoster theme `omf install agnoster`
 
-### install kind
-1. download binary `curl -Lo ./kind https://kind.sigs.k8s.io/dl/v0.17.0/kind-linux-amd64`
-2. append execute to binary file `chmod +x ./kind`
-3. move file to PATH directory `sudo mv ./kind /usr/local/bin/kind`
+### install vundle plugins
+1. install vundle `git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim`
+
+### install python pip
+1. download get-pip.py `curl -L -O https://bootstrap.pypa.io/get-pip.py`
+2. execute script to install pip `python3 get-pip.py`
 
 ### install kubectl
 1. download binary `curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"`
@@ -47,7 +44,12 @@ Host github.com-person
 ### install helm
 1. download helm `curl -L -O https://get.helm.sh/helm-v3.11.0-linux-amd64.tar.gz`
 2. extract helm `tar -xzf helm-v3.11.0-linux-amd64.tar.gz`
-3. move binary to PATH directory `sudo mv /linux-amd64/helm /usr/local/bin/helm`
+3. move binary to PATH directory `sudo mv linux-amd64/helm /usr/local/bin/helm`
+
+### install kind
+1. download binary `curl -Lo ./kind https://kind.sigs.k8s.io/dl/v0.17.0/kind-linux-amd64`
+2. append execute to binary file `chmod +x ./kind`
+3. move file to PATH directory `sudo mv ./kind /usr/local/bin/kind`
 
 ### install k9s
 1. download archive file `curl -L -O https://github.com/derailed/k9s/releases/download/v0.27.0/k9s_Linux_amd64.tar.gz`
