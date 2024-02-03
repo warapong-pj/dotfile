@@ -20,7 +20,7 @@ Host github.com-person
 
 ### install powerline front
 1. clone front and install script `git clone https://github.com/powerline/fonts.git --depth=1`
-2. change directory and execute install script `cd front && ./install.sh`
+2. change directory and execute install script `cd fonts && ./install.sh`
 
 ### install python pip
 1. download get-pip.py `curl -L -O https://bootstrap.pypa.io/get-pip.py`
@@ -33,10 +33,10 @@ Host github.com-person
 4. install oh-my-fish `curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish`
 5. allow fish shell to login shell `echo /usr/local/bin/fish | sudo tee -a /etc/shells`
 6. change default to fish shell `chsh -s /usr/local/bin/fish`
-7. install theme `omf install cyan`
+7. install theme `omf install bobthefish`
 
 ### install kind
-1. download binary `curl -Lo ./kind https://kind.sigs.k8s.io/dl/v0.17.0/kind-linux-amd64`
+1. download binary `[ $(uname -m) = x86_64 ] && curl -Lo ./kind https://kind.sigs.k8s.io/dl/v0.21.0/kind-linux-amd64`
 2. append execute to binary file `chmod +x ./kind`
 3. move file to PATH directory `sudo mv ./kind /usr/local/bin/kind`
 
