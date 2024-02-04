@@ -48,7 +48,7 @@ Host github.com-person
 ### install helm
 1. download helm `curl -L -O https://get.helm.sh/helm-v3.11.0-linux-amd64.tar.gz`
 2. extract helm `tar -xzf helm-v3.11.0-linux-amd64.tar.gz`
-3. move binary to PATH directory `sudo mv /linux-amd64/helm /usr/local/bin/helm`
+3. move binary to PATH directory `sudo mv linux-amd64/helm /usr/local/bin/helm`
 
 ### install k9s
 1. download archive file `curl -L -O https://github.com/derailed/k9s/releases/download/v0.27.0/k9s_Linux_amd64.tar.gz`
@@ -59,6 +59,9 @@ Host github.com-person
 1. clone kubectx repository `sudo git clone https://github.com/ahmetb/kubectx /opt/kubectx`
 2. move kubectx to PATH directory `sudo ln -s /opt/kubectx/kubectx /usr/local/bin/kubectx`
 3. move kubens to PATH directory `sudo ln -s /opt/kubectx/kubens /usr/local/bin/kubens`
+
+### install kubent
+1. install via shell script `sh -c "$(curl -sSL https://git.io/install-kubent)"`
 
 ### install k6
 1. download binary file `https://github.com/grafana/k6/releases/download/v0.43.1/k6-v0.43.1-linux-amd64.tar.gz`
