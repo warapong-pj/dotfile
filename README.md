@@ -36,6 +36,11 @@ Host github.com-person
 1. download get-pip.py `curl -L -O https://bootstrap.pypa.io/get-pip.py`
 2. execute script to install pip `python3 get-pip.py`
 
+### install kind
+1. download binary `curl -Lo ./kind https://kind.sigs.k8s.io/dl/v0.17.0/kind-linux-amd64`
+2. append execute to binary file `chmod +x ./kind`
+3. move file to PATH directory `sudo mv ./kind /usr/local/bin/kind`
+
 ### install kubectl
 1. download binary `curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"`
 2. append execute to binary file `chmod +x kubectl`
