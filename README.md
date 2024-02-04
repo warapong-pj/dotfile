@@ -15,6 +15,9 @@ Host github.com-person
 3. add private key by `ssh-add /path/to/private_key`
 4. setup repository `git remote set-url origin git@github.com-person:username/repo.git`
 
+### install vundle plugins
+1. install vundle `git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim`
+
 ### install powerline front
 1. clone front and install script `git clone https://github.com/powerline/fonts.git --depth=1`
 2. change directory and execute install script `cd fonts && ./install.sh`
