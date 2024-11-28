@@ -44,6 +44,7 @@ Host github.com-person
 1. download binary `curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"`
 2. append execute to binary file `chmod +x kubectl`
 3. move file to PATH directory `sudo mv kubectl /usr/local/bin/`
+4. install auto completion `kubectl completion fish | source && kubectl completion fish > ~/.config/fish/completions/kubectl.fish`
 
 ### install helm
 1. download helm `curl -L -O https://get.helm.sh/helm-v3.11.0-linux-amd64.tar.gz`
