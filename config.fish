@@ -6,8 +6,7 @@ set -gx TERM screen-256color
 set -gx EDITOR vim
 set -gx GIT_EDITOR vim
 
-set -g theme_powerline_fonts no
-set -g theme_display_git no
+set -g theme_display_git yes
 set -g theme_display_git_dirty no
 set -g theme_display_git_untracked no
 set -g theme_display_git_ahead_verbose yes
@@ -18,8 +17,9 @@ set -g theme_git_default_branches master main
 set -g theme_git_worktree_support yes
 set -g theme_use_abbreviated_branch_name yes
 set -g theme_display_vagrant yes
-set -g theme_display_docker_machine no
+set -g theme_display_docker_machine yes
 set -g theme_display_k8s_context yes
+set -g theme_display_k8s_namespace yes
 set -g theme_display_hg yes
 set -g theme_display_virtualenv no
 set -g theme_display_nix no
