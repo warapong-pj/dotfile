@@ -6,6 +6,8 @@ set -gx TERM screen-256color
 set -gx EDITOR vim
 set -gx GIT_EDITOR vim
 
+set -g theme_powerline_fonts no
+set -g theme_nerd_fonts yes
 set -g theme_display_git yes
 set -g theme_display_git_dirty no
 set -g theme_display_git_untracked no
@@ -37,8 +39,6 @@ set -g theme_title_use_abbreviated_path no
 set -g theme_date_format "+%a %H:%M"
 set -g theme_date_timezone America/Los_Angeles
 set -g theme_avoid_ambiguous_glyphs yes
-set -g theme_powerline_fonts no
-set -g theme_nerd_fonts yes
 set -g theme_show_exit_status yes
 set -g theme_display_jobs_verbose yes
 set -g default_user your_normal_user
