@@ -18,9 +18,9 @@ Host github.com-person
 ### install vundle plugins
 1. install vundle `git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim`
 
-### install powerline front
-1. clone front and install script `git clone https://github.com/powerline/fonts.git --depth=1`
-2. change directory and execute install script `cd fonts && ./install.sh`
+### install nerd font
+1. chone font from github `git clone --depth 1 https://github.com/ryanoasis/nerd-fonts.git`
+2. change directory to nerd-font and execute install script `cd nerd-fonts && ./install.sh`
 
 ### install python pip
 1. download get-pip.py `curl -L -O https://bootstrap.pypa.io/get-pip.py`
