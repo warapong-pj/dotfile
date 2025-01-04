@@ -18,17 +18,17 @@ Host github.com-person
 ### install vundle plugins
 1. install vundle `git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim`
 
-### install nerd font
-1. chone font from github `git clone --depth 1 https://github.com/ryanoasis/nerd-fonts.git`
-2. change directory to nerd-font and execute install script `cd nerd-fonts && ./install.sh`
-
 ### install python pip
 1. download get-pip.py `curl -L -O https://bootstrap.pypa.io/get-pip.py`
 2. execute script to install pip `python get-pip`
 
+### install nerd font
+1. chone font from github `git clone --depth 1 https://github.com/ryanoasis/nerd-fonts.git`
+2. change directory to nerd-font and execute install script `cd nerd-fonts && ./install.sh`
+
 ### install fish-shell and oh-my-fish
 1. install dependencies `sudo apt update && sudo apt install -y build-essential cmake ncurses-dev libncurses5-dev libpcre2-dev gettext`
-2. download and extract fish-shell `curl -L -O https://github.com/fish-shell/fish-shell/releases/download/3.6.0/fish-3.6.0.tar.xz && tar -xf fish-3.6.0.tar.xz`
+2. download and extract fish-shell `curl -s -L https://github.com/fish-shell/fish-shell/releases/download/3.6.0/fish-3.6.0.tar.xz | tar xJvf - && cd fish-3.6.0`
 3. install fish shell `cmake .; make; sudo make install;`
 4. install oh-my-fish `curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish`
 5. allow fish shell to login shell `echo /usr/local/bin/fish | sudo tee -a /etc/shells`
