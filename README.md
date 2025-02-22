@@ -35,6 +35,10 @@ Host github.com-person
 1. download get-pip.py `curl -L -O https://bootstrap.pypa.io/get-pip.py`
 2. execute script to install pip `python get-pip`
 
+### install node nvm
+1. install node `curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash`
+2. install nvm by oh-my-fish `omf install nvm`
+
 ### install kind
 1. download binary `[ $(uname -m) = x86_64 ] && curl -Lo ./kind https://kind.sigs.k8s.io/dl/v0.21.0/kind-linux-amd64`
 2. append execute to binary file `chmod +x ./kind`
