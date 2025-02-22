@@ -18,10 +18,6 @@ Host github.com-person
 ### install vundle plugins
 1. install vundle `git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim`
 
-### install python pip
-1. download get-pip.py `curl -L -O https://bootstrap.pypa.io/get-pip.py`
-2. execute script to install pip `python get-pip`
-
 ### install nerd font
 1. chone font from github `git clone --depth 1 https://github.com/ryanoasis/nerd-fonts.git`
 2. change directory to nerd-font and execute install script `cd nerd-fonts && ./install.sh`
@@ -34,6 +30,14 @@ Host github.com-person
 5. allow fish shell to login shell `echo /usr/local/bin/fish | sudo tee -a /etc/shells`
 6. change default to fish shell `chsh -s /usr/local/bin/fish`
 7. install theme `omf install bobthefish`
+
+### install python pip
+1. download get-pip.py `curl -L -O https://bootstrap.pypa.io/get-pip.py`
+2. execute script to install pip `python get-pip`
+
+### install node nvm
+1. install node `curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash`
+2. install nvm by oh-my-fish `omf install nvm`
 
 ### install kind
 1. download binary `[ $(uname -m) = x86_64 ] && curl -Lo ./kind https://kind.sigs.k8s.io/dl/v0.21.0/kind-linux-amd64`
